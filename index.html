@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالات بايثون - جوتكي للتعليم</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #e8491d;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #35424a;
+        }
+
+        h3 {
+            color: #e8491d;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #e8491d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مقالات بايثون</h1>
+    </header>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="programming.html">مقالات البرمجة</a>
+        <a href="cybersecurity.html">مقالات الأمن السيبراني</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="suggestions.html">اقتراحات</a>
+    </nav>
+
+    <div class="container">
+        <h2>أساسيات البرمجة بلغة بايثون</h2>
+        <p>تُعتبر بايثون واحدة من أكثر لغات البرمجة شعبية وسهولة في التعلم، مما يجعلها الخيار الأمثل للمبتدئين. في هذا المقال، سنستعرض أساسيات البرمجة بلغة بايثون ونقدم بعض المفاهيم الرئيسية التي يجب على كل مبتدئ معرفتها.</p>
+
+        <h3>1. ما هي بايثون؟</h3>
+        <p>بايثون هي لغة برمجة عالية المستوى، تُستخدم في مجالات متعددة مثل تطوير الويب، تحليل البيانات، الذكاء الاصطناعي، وتعلم الآلة. تمتاز بايثون بكونها سهلة القراءة والكتابة، مما يجعلها مثالية للمبتدئين.</p>
+
+        <h3>2. تثبيت بايثون</h3>
+        <p>قبل البدء في البرمجة باستخدام بايثون، يجب تثبيتها على جهازك. يمكن تحميلها من الموقع الرسمي Python.org. بعد التثبيت، يمكنك استخدام محرر نصوص مثل Visual Studio Code أو PyCharm لكتابة الكود.</p>
+
+        <h3>3. أول برنامج لك في بايثون</h3>
+        <p>لنبدأ بكتابة أول برنامج بسيط في بايثون الذي يطبع "مرحبا بالعالم":</p>
+        <pre><code>print("مرحبا بالعالم")</code></pre>
+        <p>عند تشغيل هذا الكود، سيظهر لك النص على الشاشة. هذا هو أبسط مثال على كيفية استخدام بايثون لطباعة النصوص.</p>
+
+        <h3>4. المتغيرات وأنواع البيانات</h3>
+        <p>تستخدم المتغيرات لتخزين القيم. في بايثون، يمكنك إنشاء متغيرات بسهولة:</p>
+        <pre><code>age = 25            # عدد صحيح
+name = "علي"       # نص
+height = 1.75      # عدد عشري
+is_student = True   # قيمة منطقية</code></pre>
+
+        <h3>5. العمليات الرياضية</h3>
+        <p>يمكنك استخدام بايثون لإجراء عمليات حسابية بسيطة:</p>
+        <pre><code>a = 10
+b = 5
+sum = a + b                # جمع
+difference = a - b         # طرح
+product = a * b            # ضرب
+quotient = a / b           # قسمة
+
+print("المجموع:", sum)</code></pre>
+
+        <h3>6. الشروط</h3>
+        <p>تستخدم الشروط لتنفيذ كود معين بناءً على شروط محددة:</p>
+        <pre><code>if age >= 18:
+    print("أنت بالغ.")
+else:
+    print("أنت قاصر.")</code></pre>
+
+        <h3>7. الحلقات</h3>
+        <p>تساعد الحلقات على تكرار تنفيذ كود معين. في بايثون، يمكنك استخدام for وwhile:</p>
+        <pre><code># حلقة for
+for i in range(5):
+    print("الرقم:", i)
+
+# حلقة while
+count = 0
+while count < 5:
+    print("العداد:", count)
+    count += 1</code></pre>
+
+        <h3>8. الدوال</h3>
+        <p>تُستخدم الدوال لتجميع كود في وحدات قابلة لإعادة الاستخدام:</p>
+        <pre><code>def greet(name):
+    return "مرحبًا، " + name
+
+print(greet("علي"))</code></pre>
+
+        <h3>9. القوائم</h3>
+        <p>تُعتبر القوائم (Lists) من الهياكل الأساسية في بايثون لتخزين مجموعات من العناصر:</p>
+        <pre><code>fruits = ["تفاح", "موز", "برتقال"]
+print(fruits[0])  # طباعة العنصر الأول</code></pre>
+
+        <h3>10. التعليقات</h3>
+        <p>تستخدم التعليقات لشرح الكود، مما يجعل من السهل فهمه لاحقًا:</p>
+        <pre><code># هذا هو برنامج بسيط لحساب مجموع عددين
+def add(a, b):
+    return a + b</code></pre>
+
+        <h3>الخاتمة</h3>
+        <p>تعتبر بايثون لغة برمجة رائعة للمبتدئين، حيث تجمع بين البساطة والمرونة. من خلال تعلم أساسيات بايثون، يمكنك البدء في تطوير مهاراتك البرمجية وبناء مشاريع خاصة بك. تذكر أن الممارسة المستمرة هي المفتاح لإتقان البرمجة. استمتع بتعلم بايثون واستكشاف الإمكانيات التي توفرها!</p>
+        
+        <h3>اقتراحات</h3>
+        <p>لديك اقتراحات حول مقالات بايثون؟ اترك اقتراحك هنا:</p>
+        <form>
+            <textarea placeholder="اكتب اقتراحك هنا..." rows="4"></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
+
